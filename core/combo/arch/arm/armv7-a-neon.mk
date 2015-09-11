@@ -31,7 +31,7 @@ ifeq ($(strip $(TARGET_$(combo_2nd_arch_prefix)CPU_VARIANT)),cortex-a7)
 		-Wl,--no-fix-cortex-a8
 else
 ifeq ($(strip $(TARGET_$(combo_2nd_arch_prefix)CPU_VARIANT)),cortex-a5)
-	arch_variant_cflags := -mcpu=cortex-a7 -mfpu=neon-vfpv4
+	arch_variant_cflags := -mcpu=cortex-a5 -mfpu=neon-vfpv4
 	arch_variant_ldflags := \
 		-Wl,--no-fix-cortex-a8
 else
